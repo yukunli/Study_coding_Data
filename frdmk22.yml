@@ -1,0 +1,94 @@
+#FRDM: A-B-C-D
+SINGLE: 0
+
+
+
+EWM:
+    CMD: EWM
+    FUNC0:
+        T_PIN: CPLD_IO3
+        A_PIN: B58
+        DIRECTION: A2T
+        NOTE: CPLD_IO3(T)(SW3.1) 
+
+
+
+FTM:
+    CMD: FTM
+    PWM0:
+        T_PIN: A12
+        A_PIN: PWM0_K70
+        DIRECTION: T2A
+    PWM1:
+        T_PIN: A12
+        A_PIN: PWM1_K70
+        DIRECTION: T2A
+
+GPIO:
+    CMD: GPI
+    FUNC0:
+        T_PIN: CPLD_IO3
+        A_PIN: B58
+        DIRECTION: A2T
+        NOTE: CPLD_IO3(T)(SW3.1) 
+
+
+POWER_MANAGER:
+    CMD: PMH
+    FUNC0:
+        T_PIN: CPLD_IO5
+        A_PIN: B58
+        DIRECTION: A2T
+        NOTE: CPLD_IO5(T)(C6) 
+
+DSPI_MASTER:
+    CMD: SPI
+    CLK:
+        T_PIN: B15
+        A_PIN: SPI1_CLK_K70
+        DIRECTION: T2A
+    CS:
+        T_PIN: C9
+        A_PIN: SPI1_CS0_K70
+        DIRECTION: T2A
+    MISO:
+        T_PIN: B11
+        A_PIN: SPI1_MISO_K70
+        DIRECTION: A2T
+    MOSI:
+        T_PIN: B16
+        A_PIN: SPI1_MOSI_K70
+        DIRECTION: T2A
+
+DSPI_SLAVE:
+    CMD: SSI
+    CLK:
+        T_PIN: B15
+        A_PIN: SPI1_CLK_K70
+        DIRECTION: A2T
+    CS:
+        T_PIN: C9
+        A_PIN: SPI1_CS0_K70
+        DIRECTION: A2T
+    MISO:
+        T_PIN: B11
+        A_PIN: SPI1_MISO_K70
+        DIRECTION: A2T
+    MOSI:
+        T_PIN: B16
+        A_PIN: SPI1_MOSI_K70
+        DIRECTION: T2A
+
+
+
+WDOG:
+    CMD: WDG
+    FUNC0:
+        T_PIN: CPLD_IO3
+        A_PIN: B58
+        DIRECTION: A2T
+        NOTE: CPLD_IO3(T)(SW3.1) 
+
+
+
+

@@ -1,0 +1,126 @@
+        #FRDM: A-B-C-D
+SINGLE: 0
+
+
+CMP:
+    CMD: CMP
+    CMP_IN:
+        T_PIN: B16
+        A_PIN: B58
+        DIRECTION: A2T
+    LED_OUT:
+        T_PIN: B8
+        A_PIN: A35
+        DIRECTION: T2A 
+EWM:
+    CMD: EWM
+    FUNC0:
+        T_PIN: CPLD_IO2
+        A_PIN: B58
+        DIRECTION: A2T
+        NOTE: CPLD_IO2(T)(SW3.1) 
+FTM:
+    CMD: FTM
+    PWM0:
+        T_PIN: B8
+        A_PIN: PWM0_K70
+        DIRECTION: T2A
+    PWM1:
+        T_PIN: B8
+        A_PIN: PWM1_K70
+        DIRECTION: T2A
+GPIO_INPUT_INTERRUPT:
+    CMD: GII
+    FUNC0:
+        T_PIN: CPLD_IO2
+        A_PIN: B58
+        DIRECTION: A2T
+        NOTE: CPLD_IO2(T)(SW3.1) 
+GPIO_LED_OUTPUT:
+    CMD: GLO
+    FUNC0:
+        T_PIN: A4
+        A_PIN: A39
+        DIRECTION: T2A
+    FUNC1:
+        T_PIN: A4
+        A_PIN: A40
+        DIRECTION: T2A
+POWER_MANAGER:
+    CMD: PMH
+    FUNC0:
+        T_PIN: CPLD_IO3
+        A_PIN: B58
+        DIRECTION: A2T
+        NOTE: CPLD_IO3(T)(SW2.1)
+POWER_SWITCH:
+    CMD: PMS
+    FUNC0:
+        T_PIN: CPLD_IO3
+        A_PIN: B58
+        DIRECTION: A2T
+        NOTE: CPLD_IO3(T)(SW2.1) 
+DSPI:
+    CMD: SPI
+    PCS:
+        T_PIN_1: C9
+        T_PIN_2: A6
+        DIRECTION: T2T
+    SCK:
+        T_PIN_1: B15
+        T_PIN_2: A12
+        DIRECTION: T2T
+    SOUT:
+        T_PIN_1: B16
+        T_PIN_2: A10
+        DIRECTION: T2T
+    SIN:
+        T_PIN_1: A8
+        T_PIN_2: B11
+        DIRECTION: T2T
+DSPI_MASTER:
+    CMD: SPI
+    CLK:
+        T_PIN: B15
+        A_PIN: SPI1_CLK_K70
+        DIRECTION: T2A
+    CS:
+        T_PIN: C9
+        A_PIN: SPI1_CS0_K70
+        DIRECTION: T2A
+    MISO:
+        T_PIN: B11
+        A_PIN: SPI1_MISO_K70
+        DIRECTION: A2T
+    MOSI:
+        T_PIN: B16
+        A_PIN: SPI1_MOSI_K70
+        DIRECTION: T2A
+DSPI_SLAVE:
+    CMD: SSI
+    CLK:
+        T_PIN: B15
+        A_PIN: SPI1_CLK_K70
+        DIRECTION: A2T
+    CS:
+        T_PIN: C9
+        A_PIN: SPI1_CS0_K70
+        DIRECTION: A2T
+    MISO:
+        T_PIN: B11
+        A_PIN: SPI1_MISO_K70
+        DIRECTION: A2T
+    MOSI:
+        T_PIN: B16
+        A_PIN: SPI1_MOSI_K70
+        DIRECTION: T2A
+MCG:
+    CMD: MCG
+    PWM0:
+        T_PIN: B8
+        A_PIN: PWM0_K70
+        DIRECTION: T2A
+    PWM1:
+        T_PIN: B8
+        A_PIN: PWM1_K70
+        DIRECTION: T2A
